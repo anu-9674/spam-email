@@ -5,11 +5,17 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
+from pathlib import Path
+current_directory= Path(__file__).resolve().parent
+tfidf_path=current_directory/"vectorizer.pkl"
+model_path=current_directory/"model.pkl"
+tfidf = pickle.load(open(tfidf_path, 'rb'))
+model = pickle.load(open(model_path, 'rb'))
 
 ps=PorterStemmer()
 
-tfidf = pickle.load(open("vectorizer.pkl", 'rb'))
-model = pickle.load(open("model.pkl", 'rb'))
+# tfidf = pickle.load(open("vectorizer.pkl", 'rb'))
+# model = pickle.load(open("model.pkl", 'rb'))
 
 
 st.title("SPAM EMAIL CLASSIFIER")
