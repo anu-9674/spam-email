@@ -19,8 +19,8 @@ ps=PorterStemmer()
 
 
 st.title("SPAM EMAIL CLASSIFIER")
-background_image = current_directory/"spam_email.jpg"
-st.image(background_image)
+/* background_image = current_directory/"spam_email.jpg"
+st.image(background_image) */
 
 #1.Preprocess- we need the transform_text function
 def transform_text(text):
