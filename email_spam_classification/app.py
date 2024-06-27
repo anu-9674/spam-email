@@ -13,10 +13,8 @@ tfidf = pickle.load(open(tfidf_path, 'rb'))
 model = pickle.load(open(model_path, 'rb'))
 
 ps=PorterStemmer()
-
-# tfidf = pickle.load(open("vectorizer.pkl", 'rb'))
-# model = pickle.load(open("model.pkl", 'rb'))
-
+background_image = current_directory/"spam_email.jpg"
+st.image(background_image) 
 
 st.title("SPAM EMAIL CLASSIFIER")
 
