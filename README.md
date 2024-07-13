@@ -1,4 +1,4 @@
-link to website : https://spam-email-9d82.onrender.com
+link to website :https://spam-email-g6wvfhxjvrvft3rwmysk2t.streamlit.app
 
 Spam email classifier
 This project uses the help of machin learning to filter out spam email messages.The same model can also be used for spam sms filtering
